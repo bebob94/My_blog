@@ -1,12 +1,13 @@
 import { Navbar, Nav } from "react-bootstrap";
 import React, { useEffect, useState } from "react";
+import profileImage from "../Images/profilo.jpg"; // Importa l'immagine del profilo
 
 function MyNavbar() {
   const [navbarBg, setNavbarBg] = useState(false);
 
   const handleScroll = () => {
     const offset = window.scrollY;
-    if (offset > 100) {
+    if (offset > 600) {
       setNavbarBg(true);
     } else {
       setNavbarBg(false);
@@ -23,12 +24,6 @@ function MyNavbar() {
 
   return (
     <Navbar expand="lg" fixed="top" className={navbarBg ? "navbar-scroll" : ""}>
-      <Navbar.Brand
-        href="#"
-        className={`myLink ms-5 ${navbarBg ? "text-white" : "text-black"}`}
-      >
-        Bebo
-      </Navbar.Brand>
       <Navbar.Toggle aria-controls="navbarSupportedContent" />
       <Navbar.Collapse id="navbarSupportedContent">
         <Nav className="ms-auto">
@@ -44,12 +39,7 @@ function MyNavbar() {
           >
             About
           </Nav.Link>
-          <Nav.Link
-            className={`myLink  ${navbarBg ? "text-white" : "text-black"}`}
-            href="#services"
-          >
-            Services
-          </Nav.Link>
+
           <Nav.Link
             className={`myLink  ${navbarBg ? "text-white" : "text-black"}`}
             href="#portfolio"
@@ -57,7 +47,9 @@ function MyNavbar() {
             Portfolio
           </Nav.Link>
           <Nav.Link
-            className={`myLink me-5 ${navbarBg ? "text-white" : "text-black"}`}
+            className={`myLink contact ${
+              navbarBg ? "text-white" : "text-black"
+            }`}
             href="#contact"
           >
             Contact

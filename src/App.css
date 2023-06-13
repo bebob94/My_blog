@@ -1,47 +1,49 @@
-/* hero background image */
-.bgimage {
-  height: 100vh;
-  width: 100%;
-  background-image: url("./Images/photo_2023-06-11_16-27-00.jpg");
-  object-fit: cover;
-  background-position: center -15em;
-}
 /* text css above hero image*/
+#home {
+  margin: 15em 0;
+}
+.navbar-toggler-icon {
+  background-color: rgb(231, 16, 231);
+  border-radius: 10px;
+}
 .hero_title {
   font-size: 4.5rem;
-  color: rgb(201, 14, 44);
+  color: rgb(231, 16, 231);
 }
 .hero_desc {
   font-size: 2rem;
-  color: rgb(201, 14, 44);
-  width: 25em;
-  margin: 0 auto;
+  color: rgba(175, 42, 175, 0.822);
   font-weight: 600;
 }
 .hero-text {
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 /* about section image css */
 .imageAboutPage {
   width: 100%;
+}
+.imageHome {
+  height: 20em;
+  width: 20em;
+  transform: rotate(-55deg);
+  box-shadow: rgba(0, 0, 0, 0.884) -2px -2px 10px 10px;
 }
 
 .myLink {
   text-decoration: none;
   margin: 0 10px;
   font-weight: 700;
-  color: black;
+  color: rgba(175, 42, 175, 0.822);
 }
 
 #about {
   font-weight: 600;
 }
-
+.AboutContainer {
+  margin-left: 2em;
+  box-shadow: white 0px 0px 7px 2px;
+}
 /* services section css */
 .servicesText.card {
   height: 280px;
@@ -51,6 +53,9 @@
   font-size: 36px;
   text-align: center;
   width: 100%;
+}
+.card-body {
+  background-color: rgba(0, 0, 0, 0.863);
 }
 .card-title {
   text-align: center;
@@ -64,15 +69,17 @@
 
 .navbar-scroll {
   color: white;
-  background-color: rgb(201, 14, 44);
+  background-color: rgba(0, 0, 0, 0.801);
 }
-
+.contact {
+  margin-right: 10em;
+}
 .text-black {
-  color: black !important;
+  color: rgb(231, 16, 231) !important;
 }
 
 .text-white {
-  color: white !important;
+  color: rgb(231, 16, 231) !important;
 }
 
 .social-icons {
@@ -104,4 +111,61 @@
 }
 #contact {
   padding-bottom: 4rem;
+}
+
+/* Definizione delle animazioni di fade */
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 1000ms ease-in;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 1000ms ease-out;
+}
+
+.myCarouselImages {
+  height: 20em;
+  width: 90%;
+  margin: 0 auto;
+}
+.carousel-indicators {
+  background-color: transparent;
+  color: transparent;
+}
+
+.carousel-control-next {
+  background-color: transparent;
+}
+.carousel-control-prev {
+  background-color: transparent !important;
+}
+body {
+  background-color: rgba(0, 0, 0, 0.863);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+}
+
+.Title {
+  color: rgb(231, 16, 231) !important;
+}
+
+h4 {
+  display: inline-block;
+}
+.loghi {
+  height: 4em;
+  width: 6em;
+  margin-bottom: 2em;
+}
+.MyButton {
+  background-color: rgb(231, 16, 231) !important;
 }

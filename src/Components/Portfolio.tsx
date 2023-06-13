@@ -5,7 +5,7 @@ function Portfolio() {
   return (
     <section id="portfolio">
       <Container className="mt-3">
-        <h1 className="text-center mt-4">Portfolio</h1>
+        <h1 className="text-center Title mt-4">Portfolio</h1>
         <Row>
           <Col lg={4} className="mt-4">
             <Card>
@@ -36,13 +36,17 @@ function Portfolio() {
                 alt="Card image"
               />
               <Card.Body>
-                <Card.Title>Quiz App</Card.Title>
+                <Card.Title>Linkedin Clone</Card.Title>
                 <Card.Text>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry.
+                  Clone del noto sito Linkedin con tutte le sezioni home,
+                  profilo, ricerca lavoro e la possibilità di inserire post,
+                  commenti e like
                 </Card.Text>
                 <div className="text-center">
-                  <a href="#" className="btn btn-success">
+                  <a
+                    href="https://github.com/lucaf1990/Linkedin"
+                    className="btn btn-success"
+                  >
                     Link
                   </a>
                 </div>
@@ -57,10 +61,10 @@ function Portfolio() {
                 alt="Card image"
               />
               <Card.Body>
-                <Card.Title>Product Landing Page</Card.Title>
+                <Card.Title>Spotify Clone</Card.Title>
                 <Card.Text>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry.
+                  Clone del noto sito Spotify con la possibilità di ricercare le
+                  canzoni per genere autore o titolo e salvarle nei preferiti.
                 </Card.Text>
                 <div className="text-center">
                   <a href="#" className="btn btn-success">
@@ -81,10 +85,10 @@ function Portfolio() {
                 alt="Card image"
               />
               <Card.Body>
-                <Card.Title>Messaging Service</Card.Title>
+                <Card.Title>Netflix Clone</Card.Title>
                 <Card.Text>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry.
+                  Clone del noto sito Netflix, con la possibilità di ricercare i
+                  film per autore e titolo.
                 </Card.Text>
                 <div className="text-center">
                   <a href="#" className="btn btn-success">
@@ -103,10 +107,10 @@ function Portfolio() {
                 alt="Card image"
               />
               <Card.Body>
-                <Card.Title>Twitter Clone</Card.Title>
+                <Card.Title>App Meteo</Card.Title>
                 <Card.Text>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry.
+                  Applicazione meteo che permette di vedere le condizioni
+                  atmosferiche della località che si preferisce.
                 </Card.Text>
                 <div className="text-center">
                   <a href="#" className="btn btn-success">
@@ -127,8 +131,8 @@ function Portfolio() {
               <Card.Body>
                 <Card.Title>Blog App</Card.Title>
                 <Card.Text>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry.
+                  Blog personale con tutti i miei dati, i miei progetti e i miei
+                  contatti.
                 </Card.Text>
                 <div className="text-center">
                   <a href="#" className="btn btn-success">

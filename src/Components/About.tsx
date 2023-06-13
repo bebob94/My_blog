@@ -1,88 +1,158 @@
-import { Col, Container, Row } from "react-bootstrap";
+import { Col, Container, Row, Button } from "react-bootstrap";
 import Image from "../Images/photo_2023-06-11_13-57-25.jpg";
+import Image2 from "../Images/photo_2023-06-11_16-27-00.jpg";
 import React, { useEffect, useState } from "react";
+import { CSSTransition } from "react-transition-group";
+import MyCarousel from "./MyCarousel";
+import HTML5 from "../Images/HTML5_logo_and_wordmark.svg.png";
+import CSS from "../Images/CSS3_logo_and_wordmark.svg.png";
+import Javascript from "../Images/javascript-logo.png";
+import Eclipse from "../Images/eclipse-11-logo-svg-vector.svg";
+import react from "../Images/logo.svg";
+import typescript from "../Images/Typescript.svg";
+import Java from "../Images/Java_Logo.svg.png";
+import postgresSql from "../Images/postgresql_plain_wordmark_logo_icon_146390.png";
+import visualStudio from "../Images/Visual_Studio_Code_1.35_icon.svg.png";
+import { Zoom } from "react-awesome-reveal";
 
 function About() {
-  const [age, setAge] = useState(29);
+  const [About, setAbout] = useState(false);
 
-  const updateAge = () => {
-    const currentYear = new Date().getFullYear();
-    const birthYear = 1994;
-    const newAge = currentYear - birthYear;
-    setAge(newAge);
+  useEffect(() => {
+    setAbout(true);
+  }, []);
+  const [showWork, setShowWork] = useState(true);
+
+  const toggleSection = () => {
+    setShowWork(!showWork);
   };
 
   return (
     <section id="about">
-      <Container className="mt-4 pt-4">
-        <h1 className="text-center">About Me</h1>
+      <Container className="pt-2">
+        <h1 className="text-center Title ">
+          {showWork ? "About me" : "About my hobbies"}
+        </h1>
         <Row className="mt-4">
-          <Col lg={4}>
-            <img src={Image} className="imageAboutPage rounded-4" alt="" />
-          </Col>
-          <Col lg={8}>
-            <p>
-              Hello everyone!🙋🏻‍♂️ My name is Alberto Macis, and I am a young man
-              with extensive experience in various sales-related fields🤝🏻,
-              customer relationship management, and direct customer
-              assistance🆘. <br /> Currently, I am expanding my skills in
-              FullStack Web Development, I have graduated on June 8th 2023 in an
-              intensive course with Epicode Italia, where I have learned to
-              develop both front-end and back-end web applications using the
-              latest technologies.
-            </p>
+          {About && (
+            <Col lg={3}>
+              <Zoom direction="down" delay={300} duration={2000}>
+                <img
+                  src={showWork ? Image2 : Image}
+                  className="imageAboutPage rounded-4"
+                  alt=""
+                />
+              </Zoom>
+              <Zoom direction="up" delay={300} duration={2000}>
+                <Col className="text-center mt-4">
+                  <Button
+                    style={{
+                      backgroundColor: "rgb(231, 16, 231)",
+                      border: "1px solid black",
+                      boxShadow: "black 2px 2px 5px 3px",
+                      marginBottom: "20px",
+                    }}
+                    onClick={toggleSection}
+                  >
+                    {showWork ? "Hobbies" : "Work Experience"}
+                  </Button>
+                </Col>
+              </Zoom>
+            </Col>
+          )}
+
+          <Col lg={8} className="AboutContainer rounded-4">
             <Row>
-              <Col md={6}>
-                <ul>
-                  <li>Name: Alberto Macis</li>
-                  <li>Age: {age}</li>
-                  <li>
-                    Education: Accounting, Commercial Expert, and Programmer.
-                  </li>
-                </ul>
+              <Col md={12} className="mt-3">
+                {/* Utilizza CSSTransition per animare il cambio di sezione */}
+                <CSSTransition
+                  in={showWork}
+                  timeout={300}
+                  classNames="fade"
+                  unmountOnExit
+                >
+                  <div>
+                    <p>
+                      Hello everyone!🙋🏻‍♂️ My name is Alberto Macis, and I am a
+                      young man with extensive experience in various
+                      sales-related fields🤝🏻, customer relationship
+                      management, and direct customer assistance🆘. <br />{" "}
+                      Currently, I am expanding my skills in FullStack Web
+                      Development, I have graduated on June 8th 2023 in an
+                      intensive course with Epicode Italia, where I have learned
+                      to develop both front-end and back-end web applications
+                      using the latest technologies.
+                    </p>
+
+                    <Row>
+                      <h3 className="mt-2 mb-4 Title">My Skills</h3>
+                      <p>
+                        <li>
+                          Frontend: Html, Css, Sass, Javascript, React, Redux,
+                          Router-Dom, Persist, TypeScript, Bootstrap, Axios.{" "}
+                        </li>{" "}
+                        <li>
+                          Backend: Java, PostgreSQL, Maven, JJWT, Lombok, Jpa,
+                          SpringBoot, Spring data, Spring Security, Spring Web.{" "}
+                        </li>
+                        <li>
+                          General: GitHub, Git, Postman, Discord, Visual Studio
+                          Code, Trello.
+                        </li>
+                      </p>
+                    </Row>
+                    <Row>
+                      <img src={HTML5} alt="" className="loghi" />
+                      <img src={CSS} alt="" className="loghi" />
+                      <img src={Javascript} alt="" className="loghi" />
+                      <img src={react} alt="" className="loghi" />
+                      <img src={typescript} alt="" className="loghi" />
+                      <img src={Java} alt="" className="loghi" />
+                      <img src={Eclipse} alt="" className="loghi" />
+                      <img src={postgresSql} alt="" className="loghi" />
+                      <img src={visualStudio} alt="" className="loghi" />
+                    </Row>
+                  </div>
+                </CSSTransition>
               </Col>
-              <Col md={6}>
-                <ul>
-                  <li>Occupation: Junior Fullstack developer</li>
-                  <li>Location: Muravera (SU) Sardegna Italy</li>
-                  <li>Hobbies: Hiking, Nature Photography</li>
-                </ul>
+              <Col md={12}>
+                {/* Testo di esempio lorem ipsum */}
+                <CSSTransition
+                  in={!showWork}
+                  timeout={300}
+                  classNames="fade"
+                  unmountOnExit
+                >
+                  <Row>
+                    <p>
+                      Come appassionato escursionista e fotografo di paesaggi
+                      naturali, amo esplorare la bellezza incontaminata della
+                      natura. <br />
+                      Ogni cammino mi offre l'opportunità di immergermi in
+                      panorami mozzafiato e catturare la loro grandiosità
+                      attraverso la lente della mia macchina fotografica.📸{" "}
+                      <br />
+                    </p>
+                    <Col xs={12} md={5} className="me-5">
+                      <p>
+                        I momenti trascorsi tra le montagne, i boschi e i laghi
+                        mi ricaricano di energia e mi permettono di apprezzare
+                        la meraviglia del mondo naturale.{" "}
+                      </p>
+                      <p>
+                        {" "}
+                        Attraverso i miei scatti, desidero condividere la
+                        maestosità della natura e ispirare gli altri a scoprire
+                        la gioia delle escursioni e la bellezza dei paesaggi
+                        naturali.🌄
+                      </p>
+                    </Col>
+                    <Col xs={12} md={6} className="mb-5 mt-3">
+                      <MyCarousel />
+                    </Col>
+                  </Row>
+                </CSSTransition>
               </Col>
-            </Row>
-            <Row>
-              <p>
-                I deepened my skills in JavaScript, using the React framework to
-                create dynamic and responsive user interfaces. I also utilized
-                the Bootstrap framework to ensure responsive design and a
-                professional look for my web applications. 😎🚀
-                <li>
-                  {" "}
-                  Frontend: Html, Css, Sass, Javascript, React, Redux,
-                  Router-Dom, Persist, TypeScript, Bootstrap, Axios.{" "}
-                </li>{" "}
-                <br />
-                On the Server-side, I gained solid skills using Java and the
-                Spring framework. I learned to create robust servers, manage
-                databases, and develop efficient RESTful APIs. I became familiar
-                with concepts such as dependency injection and implementing
-                security measures. 💪💻{" "}
-                <li>
-                  {" "}
-                  Backend: Java, PostgreSQL, Maven, JJWT, Lombok, Jpa,
-                  SpringBoot, Spring data, Spring Security, Spring Web.{" "}
-                </li>{" "}
-                <br />
-                Throughout the course, I worked on various practical projects
-                that allowed me to apply my skills in a real development
-                environment. I had the opportunity to work in teams, using
-                version control tools like Git to coordinate development work.
-                🤝🔧{" "}
-                <li>
-                  {" "}
-                  General: GitHub, Git, Postman, Discord, Visual Studio Code,
-                  Trello.{" "}
-                </li>
-              </p>
             </Row>
           </Col>
         </Row>
@@ -90,4 +160,5 @@ function About() {
     </section>
   );
 }
+
 export default About;
