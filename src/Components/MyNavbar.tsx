@@ -28,31 +28,31 @@ function MyNavbar() {
       <Navbar.Collapse id="navbarSupportedContent">
         <Nav className="ms-auto">
           <Nav.Link
-            className={`myLink  ${navbarBg ? "text-white" : "text-black"}`}
+            className={`myLink  ${navbarBg ? "text-light" : "text-black"}`}
             href="#home"
           >
             Home
           </Nav.Link>
           <Nav.Link
-            className={`myLink  ${navbarBg ? "text-white" : "text-black"}`}
+            className={`myLink  ${navbarBg ? "text-light" : "text-black"}`}
             href="#about"
           >
-            About
+            Chi sono
           </Nav.Link>
 
           <Nav.Link
-            className={`myLink  ${navbarBg ? "text-white" : "text-black"}`}
+            className={`myLink  ${navbarBg ? "text-light" : "text-black"}`}
             href="#portfolio"
           >
             Portfolio
           </Nav.Link>
           <Nav.Link
             className={`myLink contact ${
-              navbarBg ? "text-white" : "text-black"
+              navbarBg ? "text-light" : "text-black"
             }`}
             href="#contact"
           >
-            Contact
+            Contatti
           </Nav.Link>
         </Nav>
       </Navbar.Collapse>

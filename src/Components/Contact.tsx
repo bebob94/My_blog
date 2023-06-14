@@ -6,8 +6,8 @@ function Contact() {
   return (
     <section id="contact">
       <Container className="mt-3 contactContent">
-        <h1 className="text-center Title mb-5">Contacts</h1>
-        <Row className="mt-4 ">
+        <h1 className="text-center Title mb-5">Contatti</h1>
+        <Row className="mt-4 justyfy-content-center">
           <Col xs={12} sm={12} md={3}>
             <MdEmail className="contacts"></MdEmail>{" "}
             <a href="mailto:bebo.macis@gmail.com" className="myLinks">

@@ -31,7 +31,7 @@ function About() {
     <section id="about">
       <Container className="pt-2">
         <h1 className="text-center Title ">
-          {showWork ? "About me" : "About my hobbies"}
+          {showWork ? "Chi sono" : "I miei Hobby"}
         </h1>
         <Row className="mt-4">
           <Col lg={3}>
@@ -70,7 +70,7 @@ function About() {
                       imparando a sviluppare applicazioni web front-end e
                       back-end e a utilizzare le tecnologie più moderne.
                     </p>
-                    <Row className="justify-content-evenly">
+                    <Row className="justify-content-around">
                       <Col xs={6}>
                         <a
                           href="https://benchmark.epicode.com/credentials/64872a2fcaff90a796586293"
@@ -80,7 +80,6 @@ function About() {
                         </a>
                       </Col>
                       <Col xs={6}>
-                        {" "}
                         <a
                           href="/Curriculum.pdf"
                           download
@@ -91,7 +90,7 @@ function About() {
                       </Col>
                     </Row>
                     <Row>
-                      <h3 className="mt-5 mb-4 ">My Skills</h3>
+                      <h3 className="mt-5 mb-4 ">Skills</h3>
                       <p>
                         <li>
                           Frontend: Html, Css, Sass, Javascript, React, Redux,
@@ -109,32 +108,115 @@ function About() {
                     </Row>
                     <Row className="flex-nowrap ">
                       <Col className="d-flex justify-content-center">
-                        <Zoom direction="left" delay={600} duration={2000}>
-                          <img src={HTML5} alt="" className="loghi" />
+                        <Zoom direction="right" delay={100} duration={2000}>
+                          <img
+                            src={HTML5}
+                            alt=""
+                            style={{
+                              height: "4em",
+                              width: "4.5em",
+                              marginTop: "2em",
+                              marginRight: "30px",
+                            }}
+                          />
                         </Zoom>
-                        <Zoom direction="left" delay={800} duration={2000}>
-                          <img src={CSS} alt="" className="loghi" />
+                        <Zoom direction="right" delay={500} duration={2000}>
+                          <img
+                            src={CSS}
+                            alt=""
+                            style={{
+                              height: "4em",
+                              width: "3.5em",
+                              marginTop: "2em",
+                              marginRight: "30px",
+                            }}
+                          />
                         </Zoom>
-                        <Zoom direction="left" delay={1000} duration={2000}>
-                          <img src={Javascript} alt="" className="loghi" />
+                        <Zoom direction="right" delay={900} duration={2000}>
+                          <img
+                            src={Javascript}
+                            alt=""
+                            style={{
+                              height: "3.5em",
+                              width: "4em",
+                              marginTop: "2.5em",
+                              marginRight: "30px",
+                            }}
+                          />
                         </Zoom>
-                        <Zoom direction="left" delay={1200} duration={2000}>
-                          <img src={react} alt="" className="loghi" />
+                        <Zoom direction="right" delay={1300} duration={2000}>
+                          <img
+                            src={react}
+                            alt=""
+                            className=" rounded-5"
+                            style={{
+                              height: "3.5em",
+                              width: "3.5em",
+                              marginTop: "2em",
+                              marginRight: "30px",
+                              backgroundColor: "black",
+                            }}
+                          />
                         </Zoom>
-                        <Zoom direction="left" delay={1400} duration={2000}>
-                          <img src={typescript} alt="" className="loghi" />
+                        <Zoom direction="right" delay={1700} duration={2000}>
+                          <img
+                            src={typescript}
+                            alt=""
+                            style={{
+                              height: "3.5em",
+                              width: "3.5em",
+                              marginTop: "2em",
+                              marginRight: "30px",
+                            }}
+                          />
                         </Zoom>
-                        <Zoom direction="left" delay={1600} duration={2000}>
-                          <img src={Java} alt="" className="loghi" />
+                        <Zoom direction="right" delay={2100} duration={2000}>
+                          <img
+                            src={Java}
+                            alt=""
+                            style={{
+                              height: "5em",
+                              width: "3.5em",
+                              marginTop: "1em",
+                              marginRight: "30px",
+                            }}
+                          />
                         </Zoom>
-                        <Zoom direction="left" delay={1800} duration={2000}>
-                          <img src={Eclipse} alt="" className="loghi" />
+                        <Zoom direction="right" delay={2500} duration={2000}>
+                          <img
+                            src={Eclipse}
+                            alt=""
+                            style={{
+                              height: "5.5em",
+                              width: "4em",
+                              marginTop: "2em",
+                              marginRight: "30px",
+                            }}
+                          />
                         </Zoom>
-                        <Zoom direction="left" delay={2000} duration={2000}>
-                          <img src={postgresSql} alt="" className="loghi" />
+                        <Zoom direction="right" delay={2900} duration={2000}>
+                          <img
+                            src={postgresSql}
+                            alt=""
+                            style={{
+                              height: "4em",
+                              width: "4em",
+                              marginTop: "2em",
+                              marginRight: "30px",
+                            }}
+                          />
                         </Zoom>
-                        <Zoom direction="left" delay={2200} duration={2000}>
-                          <img src={visualStudio} alt="" className="loghi" />
+                        <Zoom direction="right" delay={3300} duration={2000}>
+                          <img
+                            src={visualStudio}
+                            alt=""
+                            style={{
+                              height: "3em",
+                              width: "3em",
+                              marginTop: "2.5em",
+                              marginRight: "30px",
+                            }}
+                          />
                         </Zoom>
                       </Col>
                     </Row>
@@ -142,7 +224,6 @@ function About() {
                 </CSSTransition>
               </Col>
               <Col md={12}>
-                {/* Testo di esempio lorem ipsum */}
                 <CSSTransition
                   in={!showWork}
                   timeout={300}

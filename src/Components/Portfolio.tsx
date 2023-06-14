@@ -13,7 +13,7 @@ function Portfolio() {
         <h1 className="text-center Title mt-4">Portfolio</h1>
         <Row>
           <Col lg={4} className="mt-4">
-            <Card>
+            <Card className="portfolioContent">
               <Card.Img variant="top" src={MVSsport} alt="Card image" />
               <Card.Body>
                 <Card.Title>M.V.S.sport</Card.Title>
@@ -104,7 +104,7 @@ function Portfolio() {
           </Col>
 
           <Col lg={4} className="mt-4">
-            <Card className="portfolioContent">
+            <Card className="portfolioContent ">
               <Card.Img variant="top" src={Meteo} alt="Card image" />
               <Card.Body>
                 <Card.Title>App Meteo</Card.Title>
