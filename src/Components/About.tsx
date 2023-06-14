@@ -60,19 +60,38 @@ function About() {
                 >
                   <div>
                     <p>
-                      Hello everyone!🙋🏻‍♂️ My name is Alberto Macis, and I am a
-                      young man with extensive experience in various
-                      sales-related fields🤝🏻, customer relationship
-                      management, and direct customer assistance🆘. <br />{" "}
-                      Currently, I am expanding my skills in FullStack Web
-                      Development, I have graduated on June 8th 2023 in an
-                      intensive course with Epicode Italia, where I have learned
-                      to develop both front-end and back-end web applications
-                      using the latest technologies.
+                      Ciao a tutti!🙋🏻‍♂️ Mi chiamo Alberto Macis, sono un ragazzo
+                      con una vasta esperienza in differenti settori legati alla
+                      vendita🤝🏻, rapporto e assistenza diretta al cliente🆘.
+                      <br />
+                      Attualmente sto ampliando le mie competenze come FullStack
+                      Web Development. <br /> In data 08-06-2023 ho terminato un
+                      corso intensivo da 950 ore con l'azienda Epicode Italia,
+                      imparando a sviluppare applicazioni web front-end e
+                      back-end e a utilizzare le tecnologie più moderne.
                     </p>
-
+                    <Row className="justify-content-evenly">
+                      <Col xs={6}>
+                        <a
+                          href="https://benchmark.epicode.com/credentials/64872a2fcaff90a796586293"
+                          className="documents"
+                        >
+                          Vedi certificato
+                        </a>
+                      </Col>
+                      <Col xs={6}>
+                        {" "}
+                        <a
+                          href="/Curriculum.pdf"
+                          download
+                          className="documents"
+                        >
+                          Scarica Curriculum
+                        </a>
+                      </Col>
+                    </Row>
                     <Row>
-                      <h3 className="mt-2 mb-4 Title">My Skills</h3>
+                      <h3 className="mt-5 mb-4 ">My Skills</h3>
                       <p>
                         <li>
                           Frontend: Html, Css, Sass, Javascript, React, Redux,

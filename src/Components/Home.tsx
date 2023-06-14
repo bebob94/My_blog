@@ -13,7 +13,7 @@ function Home() {
   return (
     <section id="home">
       {loaded && (
-        <Row className=" ms-5 flex-nowrap">
+        <Row className=" ms-5 flex-nowrap justify-content-center">
           <Col xs={12} md={6} className="hero-text text-center ">
             <Zoom direction="down" delay={700} duration={3000}>
               <h2 className="hero_title">Hi, it's me Bebo</h2>

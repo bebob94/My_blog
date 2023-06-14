@@ -68,7 +68,10 @@ function Portfolio() {
                   Progetto frontend creato con Javascript.
                 </Card.Text>
                 <div className="text-center">
-                  <a href="#" className="btn btn-success">
+                  <a
+                    href="https://github.com/lucaf1990/SPOTIFY-BuildWeek"
+                    className="btn btn-success"
+                  >
                     Link
                   </a>
                 </div>
@@ -89,7 +92,10 @@ function Portfolio() {
                   <br /> Primo progetto frontend creato con React.
                 </Card.Text>
                 <div className="text-center">
-                  <a href="#" className="btn btn-success">
+                  <a
+                    href="https://github.com/bebob94/Netflix-Clone"
+                    className="btn btn-success"
+                  >
                     Link
                   </a>
                 </div>
@@ -108,7 +114,10 @@ function Portfolio() {
                   <br /> Progetto frontend creato con React.
                 </Card.Text>
                 <div className="text-center">
-                  <a href="#" className="btn btn-success">
+                  <a
+                    href="https://github.com/bebob94/app-Meteo"
+                    className="btn btn-success"
+                  >
                     Link
                   </a>
                 </div>
