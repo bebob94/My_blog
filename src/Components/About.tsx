@@ -34,32 +34,19 @@ function About() {
           {showWork ? "About me" : "About my hobbies"}
         </h1>
         <Row className="mt-4">
-          {About && (
-            <Col lg={3}>
-              <Zoom direction="down" delay={300} duration={2000}>
-                <img
-                  src={showWork ? Image2 : Image}
-                  className="imageAboutPage rounded-4"
-                  alt=""
-                />
-              </Zoom>
-              <Zoom direction="up" delay={300} duration={2000}>
-                <Col className="text-center mt-4">
-                  <Button
-                    style={{
-                      backgroundColor: "rgb(231, 16, 231)",
-                      border: "1px solid black",
-                      boxShadow: "black 2px 2px 5px 3px",
-                      marginBottom: "20px",
-                    }}
-                    onClick={toggleSection}
-                  >
-                    {showWork ? "Hobbies" : "Work Experience"}
-                  </Button>
-                </Col>
-              </Zoom>
+          <Col lg={3}>
+            <img
+              src={showWork ? Image2 : Image}
+              className="imageAboutPage rounded-4"
+              alt=""
+            />
+
+            <Col className="text-center mt-4">
+              <Button className="ExperienceButton" onClick={toggleSection}>
+                {showWork ? "Hobbies" : "Work Experience"}
+              </Button>
             </Col>
-          )}
+          </Col>
 
           <Col lg={8} className="AboutContainer rounded-4">
             <Row>
@@ -101,16 +88,36 @@ function About() {
                         </li>
                       </p>
                     </Row>
-                    <Row>
-                      <img src={HTML5} alt="" className="loghi" />
-                      <img src={CSS} alt="" className="loghi" />
-                      <img src={Javascript} alt="" className="loghi" />
-                      <img src={react} alt="" className="loghi" />
-                      <img src={typescript} alt="" className="loghi" />
-                      <img src={Java} alt="" className="loghi" />
-                      <img src={Eclipse} alt="" className="loghi" />
-                      <img src={postgresSql} alt="" className="loghi" />
-                      <img src={visualStudio} alt="" className="loghi" />
+                    <Row className="flex-nowrap ">
+                      <Col className="d-flex justify-content-center">
+                        <Zoom direction="left" delay={600} duration={2000}>
+                          <img src={HTML5} alt="" className="loghi" />
+                        </Zoom>
+                        <Zoom direction="left" delay={800} duration={2000}>
+                          <img src={CSS} alt="" className="loghi" />
+                        </Zoom>
+                        <Zoom direction="left" delay={1000} duration={2000}>
+                          <img src={Javascript} alt="" className="loghi" />
+                        </Zoom>
+                        <Zoom direction="left" delay={1200} duration={2000}>
+                          <img src={react} alt="" className="loghi" />
+                        </Zoom>
+                        <Zoom direction="left" delay={1400} duration={2000}>
+                          <img src={typescript} alt="" className="loghi" />
+                        </Zoom>
+                        <Zoom direction="left" delay={1600} duration={2000}>
+                          <img src={Java} alt="" className="loghi" />
+                        </Zoom>
+                        <Zoom direction="left" delay={1800} duration={2000}>
+                          <img src={Eclipse} alt="" className="loghi" />
+                        </Zoom>
+                        <Zoom direction="left" delay={2000} duration={2000}>
+                          <img src={postgresSql} alt="" className="loghi" />
+                        </Zoom>
+                        <Zoom direction="left" delay={2200} duration={2000}>
+                          <img src={visualStudio} alt="" className="loghi" />
+                        </Zoom>
+                      </Col>
                     </Row>
                   </div>
                 </CSSTransition>
