@@ -13,17 +13,16 @@ function Home() {
   return (
     <section id="home">
       {loaded && (
-        <Row className=" ms-5 flex-nowrap justify-content-center">
+        <Row className=" ms-5 flex-nowrap justify-content-center align-items-center">
           <Col xs={12} md={7} className="hero-text text-center ">
             <Zoom direction="down" delay={700} duration={3000}>
-              <h2 className="hero_title">Ciao! sono Bebo Macis</h2>
+              <h2 className="hero_title">Ciao! sono Alberto Macis</h2>
               <p className="hero_desc rounded-2">
-                Un Junior Fullstack developer, <br /> con il ferro a portata di
-                mano
+                Un Junior Fullstack developer
               </p>
             </Zoom>
           </Col>
-          <Col xs={12} md={4} className=" my-3 text-center">
+          <Col xs={12} md={4} className=" text-center">
             <Zoom direction="down" delay={200} duration={2000}>
               <img src={Image} className="imageHome rounded-circle " alt="" />
             </Zoom>

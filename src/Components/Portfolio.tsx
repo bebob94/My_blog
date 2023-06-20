@@ -5,14 +5,15 @@ import Netflix from "../Images/Immagine3.png";
 import Meteo from "../Images/Immagine4.png";
 import Epicode from "../Images/Immagine5.png";
 import { Col, Container, Row, Card } from "react-bootstrap";
+import { FaGithub } from "react-icons/fa";
 
 function Portfolio() {
   return (
     <section id="portfolio">
       <Container className="mt-3">
-        <h1 className="text-center Title mt-4">Portfolio</h1>
+        <h1 className="text-center Title mt-4">I miei progetti migliori</h1>
         <Row>
-          <Col lg={4} className="mt-4">
+          <Col xs={12} md={4} className="mt-4">
             <Card className="portfolioContent">
               <Card.Img variant="top" src={MVSsport} alt="Card image" />
               <Card.Body>
@@ -22,19 +23,19 @@ function Portfolio() {
                   prenotazioni di altri utenti.
                   <br /> Progetto creato in java e react Typescript.
                 </Card.Text>
-                <div className="text-center">
+                <div className="text-center d-flex  justify-content-end">
                   <a
                     href="https://github.com/bebob94/MVS_Sports"
-                    className="btn btn-success"
+                    className="GithubButton"
                   >
-                    Link
+                    <FaGithub className="contacts"></FaGithub> Github
                   </a>
                 </div>
               </Card.Body>
             </Card>
           </Col>
 
-          <Col lg={4} className="mt-4">
+          <Col xs={12} md={4} className="mt-4">
             <Card className="portfolioContent">
               <Card.Img variant="top" src={Linkedin} alt="Card image" />
               <Card.Body>
@@ -45,18 +46,18 @@ function Portfolio() {
                   commenti e like.
                   <br /> Progetto frontend creato con react typescript.
                 </Card.Text>
-                <div className="text-center">
+                <div className="text-center d-flex  justify-content-end">
                   <a
                     href="https://github.com/lucaf1990/Linkedin"
-                    className="btn btn-success"
+                    className="GithubButton"
                   >
-                    Link
+                    <FaGithub className="contacts"></FaGithub> Github
                   </a>
                 </div>
               </Card.Body>
             </Card>
           </Col>
-          <Col lg={4} className="mt-4">
+          <Col xs={12} md={4} className="mt-4">
             <Card className="portfolioContent">
               <Card.Img variant="top" src={Spotify} alt="Card image" />
               <Card.Body>
@@ -67,12 +68,12 @@ function Portfolio() {
                   <br />
                   Progetto frontend creato con Javascript.
                 </Card.Text>
-                <div className="text-center">
+                <div className="text-center d-flex  justify-content-end">
                   <a
                     href="https://github.com/lucaf1990/SPOTIFY-BuildWeek"
-                    className="btn btn-success"
+                    className="GithubButton"
                   >
-                    Link
+                    <FaGithub className="contacts"></FaGithub> Github
                   </a>
                 </div>
               </Card.Body>
@@ -81,7 +82,7 @@ function Portfolio() {
         </Row>
         <br />
         <Row>
-          <Col lg={4} className="mt-4">
+          <Col xs={12} md={4} className="mt-4">
             <Card className="portfolioContent">
               <Card.Img variant="top" src={Netflix} alt="Card image" />
               <Card.Body>
@@ -91,19 +92,19 @@ function Portfolio() {
                   film per autore e titolo.
                   <br /> Primo progetto frontend creato con React.
                 </Card.Text>
-                <div className="text-center">
+                <div className="text-center d-flex  justify-content-end">
                   <a
                     href="https://github.com/bebob94/Netflix-Clone"
-                    className="btn btn-success"
+                    className="GithubButton"
                   >
-                    Link
+                    <FaGithub className="contacts"></FaGithub> Github
                   </a>
                 </div>
               </Card.Body>
             </Card>
           </Col>
 
-          <Col lg={4} className="mt-4">
+          <Col xs={12} md={4} className="mt-4">
             <Card className="portfolioContent ">
               <Card.Img variant="top" src={Meteo} alt="Card image" />
               <Card.Body>
@@ -113,19 +114,19 @@ function Portfolio() {
                   atmosferiche della località che si preferisce.
                   <br /> Progetto frontend creato con React.
                 </Card.Text>
-                <div className="text-center">
+                <div className="text-center d-flex  justify-content-end">
                   <a
                     href="https://github.com/bebob94/app-Meteo"
-                    className="btn btn-success"
+                    className="GithubButton"
                   >
-                    Link
+                    <FaGithub className="contacts"></FaGithub> Github
                   </a>
                 </div>
               </Card.Body>
             </Card>
           </Col>
 
-          <Col lg={4} className="mt-4">
+          <Col xs={12} md={4} className="mt-4">
             <Card className="portfolioContent">
               <Card.Img variant="top" src={Epicode} alt="Card image" />
               <Card.Body>
@@ -136,9 +137,9 @@ function Portfolio() {
                   <br />
                   Primo progetto svolto interamente in javascrpt.
                 </Card.Text>
-                <div className="text-center">
-                  <a href="#" className="btn btn-success">
-                    Link
+                <div className="text-center d-flex  justify-content-end">
+                  <a href="#" className="GithubButton">
+                    <FaGithub className="contacts"></FaGithub> Github
                   </a>
                 </div>
               </Card.Body>

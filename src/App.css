@@ -35,6 +35,12 @@
   margin: 15em 0;
 }
 
+@media (max-width: 576px) {
+  .imageHome {
+    display: none;
+  }
+}
+
 .myLink {
   text-decoration: none;
   margin: 0 10px;
@@ -64,6 +70,37 @@
   width: 100%;
 }
 
+.card {
+  border: 3px solid black;
+  border-radius: 1.2em;
+  height: 25em;
+  width: 20em;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: black 0px 0px 3px 3px;
+  border: 2px solid rgb(105, 9, 105);
+}
+
+.card-img-top {
+  height: 10em;
+  width: 100%;
+  border-bottom: 3px solid black;
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+}
+.GithubButton {
+  text-decoration: none;
+  color: #b910a6;
+  font-size: large;
+  font-weight: 700;
+}
+.card-text {
+  height: 7.5em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 .card-body {
   background-image: linear-gradient(
     to right bottom,
@@ -73,6 +110,8 @@
     #95c1e3,
     #85abde
   );
+  border-bottom-left-radius: 1em;
+  border-bottom-right-radius: 1em;
 }
 
 .card-title {
@@ -160,26 +199,6 @@
   transition: opacity 1000ms ease-out;
 }
 
-/* Carousel */
-.myCarouselImages {
-  height: 20em;
-  width: 90%;
-  margin: 0 auto;
-}
-
-.carousel-indicators {
-  background-color: transparent;
-  color: transparent;
-}
-
-.carousel-control-next {
-  background-color: transparent;
-}
-
-.carousel-control-prev {
-  background-color: transparent !important;
-}
-
 /* General Styling */
 body {
   background-image: linear-gradient(
@@ -211,37 +230,6 @@ h4 {
 
 .MyButton {
   background-color: rgba(0, 0, 0, 0.904) !important;
-}
-
-.card {
-  border: 3px solid black;
-}
-
-.card:hover {
-  transform: scale(1.02);
-  box-shadow: black 0px 0px 3px 3px;
-  border: 2px solid rgb(105, 9, 105);
-}
-
-.portfolioContent {
-  border-radius: 1.2em;
-}
-
-.card-img-top {
-  height: 14em;
-  width: 100%;
-  border-bottom: 3px solid black;
-  border-top-left-radius: 1em;
-  border-top-right-radius: 1em;
-}
-
-.card-body {
-  border-bottom-left-radius: 1em;
-  border-bottom-right-radius: 1em;
-}
-
-.card-text {
-  height: 8em;
 }
 
 .ExperienceButton {
@@ -290,4 +278,9 @@ h4 {
 
 .documents:hover {
   color: #d312bc;
+}
+@media (max-width: 768px) {
+  .hideOnTablet {
+    display: none;
+  }
 }
